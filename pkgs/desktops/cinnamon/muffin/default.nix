@@ -55,7 +55,6 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [
     desktop-file-utils
-    gobject-introspection
     mesa # needed for gbm
     meson
     ninja
@@ -70,6 +69,7 @@ stdenv.mkDerivation rec {
     cinnamon-desktop
     dbus
     glib
+    gobject-introspection
     gtk3
     libcanberra
     libdrm
