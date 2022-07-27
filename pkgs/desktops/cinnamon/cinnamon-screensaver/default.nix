@@ -21,7 +21,7 @@
 , pam
 , accountsservice
 , cairo
-, xapps
+, xapp
 , xdotool
 , xorg
 , iso-flags-png-320x420
@@ -62,7 +62,7 @@ stdenv.mkDerivation rec {
     xorg.libXrandr
 
     (python3.withPackages (pp: with pp; [ pygobject3 setproctitle xapp pycairo ]))
-    xapps
+    xapp
     xdotool
     pam
     accountsservice

@@ -21,7 +21,7 @@
 }:
 
 stdenv.mkDerivation rec {
-  pname = "xapps";
+  pname = "xapp";
   version = "2.2.14";
 
   outputs = [ "out" "dev" ];
@@ -91,7 +91,7 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    homepage = "https://github.com/linuxmint/xapps";
+    homepage = "https://github.com/linuxmint/xapp";
     description = "Cross-desktop libraries and common resources";
     license = licenses.lgpl3;
     platforms = platforms.linux;
