@@ -2533,6 +2533,12 @@ self: super: {
   })
   super.polynomial);
 
+  # Fix build with GHC 9 (https://github.com/neovimhaskell/nvim-hs-contrib/pull/2)
+  nvim-hs-contrib = appendPatch (fetchpatch {
+    url = "https://github.com/neovimhaskell/nvim-hs-contrib/commit/4810421198f0cb71834d779d3bd6947a6ad4ba9b.patch";
+    sha256 = "sha256-eI9WBldJx4QA+9GTLHhe5PgSBBe1nMOHy/1lu6xSI/I=";
+  }) super.nvim-hs-contrib;
+
   # lucid-htmx has restrictive upper bounds on lucid and servant:
   #
   #   Setup: Encountered missing or private dependencies:
