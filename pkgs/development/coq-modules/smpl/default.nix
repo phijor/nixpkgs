@@ -9,10 +9,12 @@ mkCoqDerivation {
   release."8.13".sha256 = "sha256-HxQBaIE2CjyfG4GoIXprfehqjsr/Z74YdodxMmrbzSg=";
   release."8.14".sha256 = "sha256:0wmrc741j67ch4rkygjkrz5i9afi01diyyj69i24cmasvx4wad38";
   release."8.15".sha256 = "sha256:0m9xlkdhilvqb0v4q9c4hzfwffbccd6029ks39xg7qbiq6zklpvp";
+  release."8.16".sha256 = "sha256:14sicxizky3m0zk20pgn91vcrlajhl8sdw2r55kjzj24i134asbl";
   releaseRev = v: "v${v}";
 
   inherit version;
   defaultVersion = with lib.versions; lib.switch coq.version [
+    { case = isEq "8.16"; out = "8.16"; }
     { case = isEq "8.15"; out = "8.15"; }
     { case = isEq "8.14"; out = "8.14"; }
     { case = "8.13.2"; out = "8.13"; }
