@@ -3110,4 +3110,7 @@ self: super: {
     hash = "sha256-tFOWpjGmZANC7H82QapZ36raaNWuZ6F3BgjxnfTXpMs=";
   }) super.proto3-wire;
 
+  # Ignore bound aeason >= 2.2 && < 2.3
+  agda2hs = doJailbreak super.agda2hs;
+
 } // import ./configuration-tensorflow.nix {inherit pkgs haskellLib;} self super

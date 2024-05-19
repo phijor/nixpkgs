@@ -104,7 +104,6 @@ broken-packages:
   - affection # failure in job https://hydra.nixos.org/build/233213076 at 2023-09-02
   - affine-invariant-ensemble-mcmc # failure in job https://hydra.nixos.org/build/233237176 at 2023-09-02
   - Agata # failure in job https://hydra.nixos.org/build/233221026 at 2023-09-02
-  - agda2hs # failure in updateAutotoolsGnuConfigScriptsPhase in job https://hydra.nixos.org/build/239252884 at 2023-11-10
   - agda2train # failure in updateAutotoolsGnuConfigScriptsPhase in job https://hydra.nixos.org/build/239247619 at 2023-11-10
   - Agda-executable # failure in job https://hydra.nixos.org/build/233332629 at 2023-09-02
   - agda-language-server # failure in job https://hydra.nixos.org/build/233332694 at 2023-09-02
