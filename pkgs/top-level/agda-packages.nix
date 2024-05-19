@@ -35,5 +35,9 @@ let
     agdarsec = callPackage ../development/libraries/agda/agdarsec { };
 
     _1lab = callPackage ../development/libraries/agda/1lab { };
+
+    agda2hs = callPackage ../development/libraries/agda/agda2hs {
+      agda2hs-version = pkgs.haskellPackages.agda2hs.version;
+    };
   };
 in mkAgdaPackages Agda
